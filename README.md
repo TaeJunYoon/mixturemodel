@@ -79,8 +79,7 @@ By comparing the obtained parameters and probability distribution functions with
 ### Descriptions
 #### Input: population data (*values*), covergence tolerance (*epsilon*), number of sampled data (*K*)
 #### Output: arithmetic means (*mu*), standard deviations(*sigma*), and mixture weights(*p*) of the Inverse Gamma and the Normal distributions, loglikelihood (*loglikelihood*)
-This code calculates the population parameters of the Inverse Gamma-Normal mixture model using the Method of Moments.  
-If the convergence rate is too slow because of a large number of population data, they can be randomly sampled.
+This code calculates the population parameters of the Inverse Gamma-Normal mixture model using the Maximum Likliehood Estimation (MLE). If the convergence rate is too slow because of a large number of population data, they can be randomly sampled.
 
 ### Example
 The synthetic data obtained in the previous example is used.
