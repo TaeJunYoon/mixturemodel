@@ -1,9 +1,10 @@
-# Statistical Mixture Model
+# Statistical Mixture Model I
 ## Introduction
-This repository contains MATLAB codes for statistical mixture models.  
+This repository contains MATLAB codes for Inverse-Gamma Normal mixture model.  
+Other codes for mixture model application for supercritical fluids (Lognormal-Nakagami mixture, Probabilistic classification) will be uploaded soon.  
 If you use these codes for the publication, please cite one of the following articles.  
-[1] Yoon, T. J., Ha, M. Y., Lee, W. B., & Lee, Y. W. (2017),The Journal of Supercritical Fluids, 119, 36-43.  
-[2] Yoon, T. J., Ha, M. Y., Lee, W. B., & Lee, Y. W. (2017), The Journal of Supercritical Fluids, 130, 364-372.  
+[1] Yoon, T. J., Ha, M. Y., Lee, W. B., & Lee, Y.-W. (2017),The Journal of Supercritical Fluids, 119, 36-43.  
+[2] Yoon, T. J., Ha, M. Y., Lee, W. B., & Lee, Y.-W. (2017), The Journal of Supercritical Fluids, 130, 364-372.  
 
 If you have any questions, please contact me with my e-mail or researchgate account.
 e-mail: oheim124@gmail.com
