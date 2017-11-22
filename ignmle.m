@@ -1,4 +1,4 @@
-function [mu, sigma, p, counter, loglikelihood]=IGNMLE(values,epsilon,K)
+function [mu, sigma, p, counter, loglikelihood]=ignmle(values,epsilon,K)
 % This function is used to fit the inverse gamma distribution to data.
 % This code can be freely distributed.
 % Please cite one of the following article if you use employ this code.
