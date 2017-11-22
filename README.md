@@ -78,7 +78,7 @@ By comparing the obtained parameters and probability distribution functions with
 ## IGN2.m
 ### Descriptions
 #### Input: population data (*values*), covergence tolerance (*epsilon*), number of sampled data (*K*)
-#### Output: arithmetic means (*mu*), standard deviations(*sigma*), and mixture weights(*p*) of the Inverse Gamma and the Normal distributions. 
+#### Output: arithmetic means (*mu*), standard deviations(*sigma*), and mixture weights(*p*) of the Inverse Gamma and the Normal distributions, loglikelihood (*loglikelihood*)
 This code calculates the population parameters of the Inverse Gamma-Normal mixture model using the Method of Moments.  
 If the convergence rate is too slow because of a large number of population data, they can be randomly sampled.
 
