@@ -92,7 +92,7 @@ data2 = normrnd(0.012,0.002,[100000,1]); % random numbers sampled from the Norma
 data = [data1;data2];
 histogram(data,'Normalization','pdf')
 hold on
-[mu, sigma, p, counter, loglikelihood]=Ignmle(data,1E-7,10000);
+[mu, sigma, p, counter, loglikelihood]=ignmle(data,1E-7,10000);
 x=1E-4:1E-4:.02;
 y1=p(1)*invgampdf(x,mu(1),sigma(1));
 y2=p(2)*normpdf(x,mu(2),sigma(2));
