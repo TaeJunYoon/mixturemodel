@@ -47,7 +47,7 @@ y = invgampdf(x,mu,sigma);
 plot(x,y);
 ```
 
-## IGN.m
+## ignmom.m
 ### Descriptions
 #### Input: population data (*values*), covergence tolerance (*epsilon*), number of sampled data (*K*)
 #### Output: arithmetic means (*mu*), standard deviations(*sigma*), and mixture weights(*p*) of the Inverse Gamma and the Normal distributions. 
@@ -68,14 +68,14 @@ hold on
 #### Step 2: Apply the Inverse Gamma-Normal mixture model.
 We apply the Method of Moments to the data.
 ```MATLAB
-[mu,sigma,p,counter]=IGN(data,1E-7,100000);
+[mu,sigma,p,counter]=ignmom(data,1E-7,100000);
 x = 1E-4:1E-4:.02; 
 y1 = p(1)*invgampdf(x,mu(1),sigma(1));
 y2 = p(2)*normpdf(x,mu(2),sigma(2));
 plot(x,y1); plot(x,y2); plot(x,y1+y2);
 ```
 By comparing the obtained parameters and probability distribution functions with the original data, you can know that the mixture model was well fitted to the synthetic data.
-## IGN2.m
+## ignmle.m
 ### Descriptions
 #### Input: population data (*values*), covergence tolerance (*epsilon*), number of sampled data (*K*)
 #### Output: arithmetic means (*mu*), standard deviations(*sigma*), and mixture weights(*p*) of the Inverse Gamma and the Normal distributions, loglikelihood (*loglikelihood*)
@@ -93,9 +93,9 @@ data2 = normrnd(0.012,0.002,[100000,1]); % random numbers sampled from the Norma
 data = [data1;data2];
 histogram(data,'Normalization','pdf')
 hold on
-[mu, sigma, p, counter, loglikelihood]=IGNMLE(data,1E-7,10000);
+[mu, sigma, p, counter, loglikelihood]=Ignmle(data,1E-7,10000);
 x=1E-4:1E-4:.02;
->> y1=p(1)*invgampdf(x,mu(1),sigma(1));
+y1=p(1)*invgampdf(x,mu(1),sigma(1));
 y2=p(2)*normpdf(x,mu(2),sigma(2));
 plot(x,y1)
 hold on
